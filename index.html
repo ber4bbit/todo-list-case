@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <title>ToDo List</title>
+</head>
+<body>
+    <div class="container">
+        <header class="container header-container">
+            <div class="date-container">
+                <p class="date-container__date"></p>
+                <p class="date-container__day"></p>
+            </div>
+        </header>
+        <main class="todo-list-container">
+            <div class="todo-list-container__add-todo-wrapper">
+                <input type="text" class="form-control" placeholder="Введите задачу" id="add-todo-input">
+                <button type="button" class="btn btn-success" id="add-todo-btn">Добавить</button>
+            </div>
+            <ul class="todo-list-container__todo-list list-group">
+            </ul>
+        </main>
+    </div>
+    <script src="./js/script.js"></script>
+    <script src="./js/date.js"></script>
+    <script src="./js/createTodo.js"></script>
+</body>
+</html>
